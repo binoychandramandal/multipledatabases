@@ -11,4 +11,4 @@ COPY --from=BUILD_IMAGE /tmp/target/multipledatabasespring*.jar ./multipledataba
 ENTRYPOINT ["/usr/bin/java"]
 CMD ["-jar", "/multipledatabasespring.jar"]
 VOLUME /var/lib/multipledatabasespring/config-repo
-EXPOSE 8080
+EXPOSE 8088
